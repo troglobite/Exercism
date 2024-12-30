@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+? /Users/brian.parry/Exercism/haskell/nucleotide-count/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_nucleotide_count.hs
+: hash: 1af4d6df5fe685a2432e2421f1fd83604b9d398df55014ffcdb65c4929fe071c
+/Users/brian.parry/Exercism/haskell/nucleotide-count/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: 7c4436bc3c3058da41b88e6eec66d733fd6090a042988f6f1fc3bdec2f0d5a44
+/Users/brian.parry/Exercism/haskell/nucleotide-count/nucleotide-count.cabal:
+  hash: cd53c1608212e7ad08d7481cac65f3805d7ae502006bd511c8c585c1cc4acf3a
+/Users/brian.parry/Exercism/haskell/nucleotide-count/package.yaml:
+  hash: a9addd79532906f9ac795239d06df65176d38dadf35821e65efed3b7d93b19da
+/Users/brian.parry/Exercism/haskell/nucleotide-count/src/DNA.hs:
+  hash: e612bcd7fdc0889c3ed5787f978892c03ee47f596bc23906d18df5ba735c48b3

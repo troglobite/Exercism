@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+? /Users/brian.parry/Exercism/haskell/sum-of-multiples/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_sum_of_multiples.hs
+: hash: 636e5dc5e084b117537b1b4da5308bb78cde4c1f13e32d60dbb289a9d56c081a
+/Users/brian.parry/Exercism/haskell/sum-of-multiples/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: 28816cbdd7de1aba925a4fdda656c96450f0a4e1a8b55f5c339e437d8b534294
+/Users/brian.parry/Exercism/haskell/sum-of-multiples/package.yaml:
+  hash: b0245edaf4cdf6c00e91390f508defb05ee30791fa9027306d8f75fd057f58c8
+/Users/brian.parry/Exercism/haskell/sum-of-multiples/src/SumOfMultiples.hs:
+  hash: bcc4fa50824a88c86d1d63c0f614e16776e0dffff510232368a1066c739ff780
+/Users/brian.parry/Exercism/haskell/sum-of-multiples/sum-of-multiples.cabal:
+  hash: be7c6e7c3471dde7b38a907e6b73f2f820254019525a28c3b001dee8d81844af

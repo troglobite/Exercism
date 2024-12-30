@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+/Users/brian.parry/Exercism/haskell/clock/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_exercism_clock.hs:
+  hash: 8b393be46651f75260c97883cc3ca2c425cdaf9635b38550aed264117b1f8077
+/Users/brian.parry/Exercism/haskell/clock/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: b0085228912d2f16f0b6a27dea124d8cf0bdd05c3cc2081caba33f2f98b9acda
+/Users/brian.parry/Exercism/haskell/clock/exercism-clock.cabal:
+  hash: e27853710b5687cbbb85f2a6ffbc14bbb59a53187f29d0790c1246fa442a715b
+/Users/brian.parry/Exercism/haskell/clock/package.yaml:
+  hash: c96e719fe7aa088be4d9288e464eb4e84f1ef93c2f5f874a04673b78d7a2ede9
+/Users/brian.parry/Exercism/haskell/clock/src/Clock.hs:
+  hash: 06bdc1042569420604e5a5715c7b4e9bcfff2e63142dd44dccc9715a0394b45d

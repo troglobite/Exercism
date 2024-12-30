@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+/Users/brian.parry/Exercism/haskell/acronym/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_acronym.hs:
+  hash: 34b530889179a68a39c90894434878794d9931ec03300d01641bc7881b26f857
+/Users/brian.parry/Exercism/haskell/acronym/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: 2f3dae518b16f92f7081a64e94d77b38ed78e994fb9b1d02389643a056e7d38a
+/Users/brian.parry/Exercism/haskell/acronym/acronym.cabal:
+  hash: 464cf0ab37eae7b504d078f3f88c3a3454a1101e4e116ce1696b7d8ad65ea04b
+/Users/brian.parry/Exercism/haskell/acronym/package.yaml:
+  hash: 281a4b833225cc326e95e626440b6ae87769c7113592198dcdde8689ad9a7153
+/Users/brian.parry/Exercism/haskell/acronym/src/Acronym.hs:
+  hash: 7e85779f5d7bcb69cd32fee4372a0b2ca62d50d4a0c682344612aadc89722d3a

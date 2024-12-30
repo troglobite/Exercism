@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+/Users/brian.parry/Exercism/haskell/anagram/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_anagram.hs:
+  hash: a51bb039a239c47e925d8464c01c869e5107c3e968ab7a472a7bbfda7fcb88ac
+/Users/brian.parry/Exercism/haskell/anagram/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: 0c0a8c7b7735e4b7d3b9a58e8ce642c85c4fe74538393fbc739e3b3db5b1631a
+/Users/brian.parry/Exercism/haskell/anagram/anagram.cabal:
+  hash: f51678ecb6ed9d0114efb9b9490f0d82dc879a6653edc2abdfec3a7df20bd1cf
+/Users/brian.parry/Exercism/haskell/anagram/package.yaml:
+  hash: 134502102f7727a6ac5eafc1bfb99ae3a18ecbde470198c9cdc80fecbe98fec7
+/Users/brian.parry/Exercism/haskell/anagram/src/Anagram.hs:
+  hash: 7365c50a6ac2ff2aa8602b1026073d9f50e4ca82380d36375759e97c841afa50

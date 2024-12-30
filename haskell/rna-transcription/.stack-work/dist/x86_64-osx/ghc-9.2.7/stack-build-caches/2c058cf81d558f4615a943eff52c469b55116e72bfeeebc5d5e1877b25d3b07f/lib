@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+? /Users/brian.parry/Exercism/haskell/rna-transcription/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_rna_transcription.hs
+: hash: 8eae1a60842139854198e329b39f0ef9e4d05dcccfd700bd27d0a41636f496b9
+/Users/brian.parry/Exercism/haskell/rna-transcription/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: d94707b78f3a2df291c7aff1b47538820c5b4ec6efd08885cbab0db20f199cb2
+/Users/brian.parry/Exercism/haskell/rna-transcription/package.yaml:
+  hash: 2766671ccd85c1d682ec62ec3163fcf738c20004e444c5dceb6a3207c15c6dca
+/Users/brian.parry/Exercism/haskell/rna-transcription/rna-transcription.cabal:
+  hash: 5fa5c64ae743c3e5ade7e837783f75695e13aed91a31f4c11efe84536463d5b7
+/Users/brian.parry/Exercism/haskell/rna-transcription/src/DNA.hs:
+  hash: c16b9c0a6bd18f1e55252d19bf0c0d9a519fee919a6a12171d465e7087331b77

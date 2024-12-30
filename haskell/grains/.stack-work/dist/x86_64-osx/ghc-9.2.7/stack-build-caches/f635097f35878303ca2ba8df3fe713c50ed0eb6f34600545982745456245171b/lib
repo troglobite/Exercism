@@ -1,0 +1,12 @@
+/Users/brian.parry/.stack/programs/x86_64-osx/ghc-9.2.7/lib/ghc-9.2.7/lib/x86_64-osx-ghc-9.2.7/rts-1.0.2/include/ghcversion.h:
+  hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
+/Users/brian.parry/Exercism/haskell/grains/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_grains.hs:
+  hash: 413aa92cfca90e3aca0e66ed41b5dd6a5f930e9024dc504f118c43a6f445ad24
+/Users/brian.parry/Exercism/haskell/grains/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
+  hash: 156b7f3c2d638c9f1be63fa10c8b21808f873d0a32f2f9a48b35b463dc923ffa
+/Users/brian.parry/Exercism/haskell/grains/grains.cabal:
+  hash: ad5e801584152d53bfe55e0c6b3f38472619f11712cdbb0d42967d4cbd9b08b5
+/Users/brian.parry/Exercism/haskell/grains/package.yaml:
+  hash: 54fb9dc6a6d17fad2e098f0f1c0958a01eb19217110896d17c6fe87d478c027e
+/Users/brian.parry/Exercism/haskell/grains/src/Grains.hs:
+  hash: 36f5d0abe4ea7d8f3456aeb09bf0b82d05e60ba905eddacc0ea8caae314edb2d
