@@ -2,11 +2,9 @@
   hash: 33b3e1b0047b6cca48a29d69ecd33f64042e571e70747f1155f402ea75f33a9f
 /Users/brian.parry/Exercism/haskell/crypto-square/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/Paths_crypto_square.hs:
   hash: 2ed9111ccbaffb9f40cfa5f830cdc7514a5a34ad2b2c0e4bf7c5ee37f1e02f8d
-/Users/brian.parry/Exercism/haskell/crypto-square/.stack-work/dist/x86_64-osx/ghc-9.2.7/build/autogen/cabal_macros.h:
-  hash: 4702626acf612e9b70c801d1ef0cf6bdaa236856a3f726a727588a1200a64c0a
 /Users/brian.parry/Exercism/haskell/crypto-square/crypto-square.cabal:
   hash: 5f98cce93562d20745223a8af04941e0b719e4528bf1a30b7ce5e77559f57b65
 /Users/brian.parry/Exercism/haskell/crypto-square/package.yaml:
   hash: ced7ab08d02b56debad899eca304665cc17c62958e8f15125c0ee07e9a82978e
 /Users/brian.parry/Exercism/haskell/crypto-square/src/CryptoSquare.hs:
-  hash: 98a24aeb00f2e40cc62df75a08b59295a2e8aee11a761c5c29480beeb6ef0b35
+  hash: 5392275621ac8bfaefd7bc8de25b39db42d2e0ef20ef8755e7aef23a46e4e712
