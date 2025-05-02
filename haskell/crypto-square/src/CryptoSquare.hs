@@ -10,24 +10,21 @@ testEncode =
 
 -- encode :: String -> String
 encode str =
-  -- chunk (cols str) str
-  unwords . transpose $ splitter (cols normal) normal
+  unwords $ (padder rs) <$> (transpose $ splitter cols normal)
   where
-    normal = filterString . normalizeString $ str
-    -- Normalize  strin
-    ns s = normalizeString s
-    -- filter out only alphanums
-    fs s = filterString $ ns s
-    -- calculate rows
-    rs s = rows $ fs s
-    -- calculate columns
-    cols s = columns (rows s) (fs s)
-    -- break string up into chunks based on columns
-    chunk c s = insertEvery c ' ' (fs s)
-    -- transpose lists
-    trans cs = transpose cs
+    -- Normalize and filter alphanumerics from string
+    normal = normalizeString $ str
+    -- calculate columns based on row size
+    rs = rows normal
+    cols = columns rs normal
     -- add extra spaces so every chunk is same size
 
+-- Add a space to strings that are less then row count
+padder :: Int -> String -> String
+padder col str =
+  if length str < col
+  then str <> " "
+  else str
 
 
 -- Takes a string and filters out everything that is not alpha-numeric
@@ -37,7 +34,7 @@ filterString = filter isAlphaNum
 
 -- Takes a string and a lowercase copy with only the alpha numeric values
 normalizeString :: String -> String
-normalizeString = filterString . map toLower
+normalizeString = (filter isAlphaNum) . map toLower
 
 
 -- Takes a string and calculates the amount of rows needed for the square cypher
@@ -103,3 +100,9 @@ insertAtIndex i x xs = (take i xs) ++ [x] ++ (drop i xs)
 -- Data.List.transpose can be used to build the final string once broken up in a list of substrings
 
 -- Need to add the remaining spaces to last element, sqrt is 56 and string length is 54 so i need to add 2 spaces to end
+
+-- Need to figure out how to distribute the remaining spaces over all the rows starting from the end
+-- so that there is only one extra space added to each row.
+-- For example the sqrt is 56 but the cleaned string is 54 chars long, so we need to add 2 extra spaces,
+-- but those 2 extra spaces shouldnot be added to the last column.
+-- An extra space should be added to the last 2 columns.
