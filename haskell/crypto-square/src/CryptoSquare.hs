@@ -1,23 +1,18 @@
 module CryptoSquare ( encode ) where
 
 import Data.Char ( isAlphaNum, toLower )
-import GHC.Float ( float2Int, int2Float )
-import Data.List
+import GHC.Float ( int2Float )
+import Data.List ( transpose )
 
 
-testEncode =
-  encode "If man was meant to stay on the ground, god would have given us roots."
-
--- encode :: String -> String
+encode :: String -> String
 encode str =
   unwords $ (padder rs) <$> (transpose $ splitter cols normal)
   where
-    -- Normalize and filter alphanumerics from string
     normal = normalizeString $ str
-    -- calculate columns based on row size
     rs = rows normal
     cols = columns rs normal
-    -- add extra spaces so every chunk is same size
+
 
 -- Add a space to strings that are less then row count
 padder :: Int -> String -> String
@@ -27,20 +22,15 @@ padder col str =
   else str
 
 
--- Takes a string and filters out everything that is not alpha-numeric
-filterString :: String -> String
-filterString = filter isAlphaNum
-
-
 -- Takes a string and a lowercase copy with only the alpha numeric values
 normalizeString :: String -> String
 normalizeString = (filter isAlphaNum) . map toLower
 
 
 -- Takes a string and calculates the amount of rows needed for the square cypher
--- rows = the square root of the length of the string
+-- rows = the square root of the length of the string, rounding up
 rows :: Foldable t => t a -> Int
-rows = float2Int . sqrt . int2Float . length
+rows = round . sqrt . int2Float . length
 
 
 -- Take the amount of rows and the string and returns and the amount of columns in the squar cypher
@@ -52,7 +42,6 @@ columns rowCount str =
   else rowCount
 
 
--- Works
 -- Takes the size of the chunk and a string and returns the string broken up into the chunk sizes
 splitter :: Int -> [a] -> [[a]]
 splitter _ [] = []
@@ -62,47 +51,3 @@ splitter i l = h : splitter i t
     h = fst split
     t = snd split
 
-
--- Works
--- Inserts the provided character at the desired desitination of a String
-insertEvery :: Int -> Char -> [Char] -> [Char]
-insertEvery 0 x xs = xs
-insertEvery i x [] = []
-insertEvery i x xs
-  | length xs < i = xs
-  | otherwise = take i xs ++ [x] ++ insertEvery i x (drop i xs)
-
-
--- Function that starts at the end of the string and adds the missing row count
--- one at a time every column count
-insertAtIndex _ _ [] = []
-insertAtIndex i x xs = (take i xs) ++ [x] ++ (drop i xs)
-
-
--- remove punctuation and lowercase
--- calculate the size of each chunk using the sqrt of the length of the string
--- create new sublist's based off of chunk size
-
-
--- Example Chunk Size:
--- length of a given string: 54
--- squareroot of 54: 7.34846
--- 7 * 7 = 49
--- 7 * 8 = 56
--- rows = 7
--- columns = 8
--- spaces needed: 56 - 54 = 2
-
--- Need to break the string up into columns ex: ["ifmanwas", "meanttos", "tayonthe", "groundgo", "dwouldha", "vegivenu", "sroots  "
--- finding a way to map (take columns) over the string
-
-
--- Data.List.transpose can be used to build the final string once broken up in a list of substrings
-
--- Need to add the remaining spaces to last element, sqrt is 56 and string length is 54 so i need to add 2 spaces to end
-
--- Need to figure out how to distribute the remaining spaces over all the rows starting from the end
--- so that there is only one extra space added to each row.
--- For example the sqrt is 56 but the cleaned string is 54 chars long, so we need to add 2 extra spaces,
--- but those 2 extra spaces shouldnot be added to the last column.
--- An extra space should be added to the last 2 columns.
