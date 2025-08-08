@@ -1,5 +1,7 @@
 module Prime (nth) where
 
+import Data.List (elemIndex, splitAt)
+
 nth :: Int -> Maybe Integer
 nth n = error "You need to implement this function."
 
@@ -25,13 +27,36 @@ nthTrialDivisionMethod n = undefined
 -- Move to the next unmarked number (which is 3) and mark all its multiples as composite.
 -- Continue this process until you reach the square root of the limit.
 -- All the unmarked numbers in the list are prime numbers
-nthSieveOfEratostenesMethod n = undefined
+--
+-- TODO: Need to repeat markComposites for each int in consecutiveIntegers
+nthSieveOfEratostenesMethod n = fst <$> (filter (\c -> snd c == True) $ markComposites (multiples 2 n) (composites n))
 
-list' :: Int -> [(Int, Bool)]
-list' x = map (\x' -> (x', False)) $ consecutiveIntegers x
 
+composites :: Int -> [(Int, Bool)]
+composites limit = map (\x' -> (x', False)) [2..limit]
+
+
+-- Need to create new list where the composite is marked as true
+markComposite :: [(Int, Bool)] -> Int -> [(Int, Bool)]
+markComposite composites int =
+  -- Only need to mark False composites
+  case elemIndex (int, False) composites of
+    Just index -> do
+      let (x, _:y) = splitAt index composites in
+        x ++ (int, True) : y
+    Nothing -> composites
+  
+
+-- Take a list of ints and a list of potential composites and set each int found in composite to true
+markComposites :: [Int] -> [(Int, Bool)] -> [(Int, Bool)]
+markComposites [] composites = composites
+markComposites (x:xs) composites = markComposites xs (markComposite composites x) 
+
+
+-- May not be needed, composites does this
 consecutiveIntegers :: Int -> [Int]
-consecutiveIntegers x = [2..x]
+consecutiveIntegers limit = [2..limit]
+
 
 multiples :: Int -> Int -> [Int]
 multiples x limit = take limit $ map (* x) [1..]
