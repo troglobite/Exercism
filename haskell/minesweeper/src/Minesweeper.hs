@@ -6,16 +6,14 @@ import Data.Maybe (catMaybes)
 import Control.Exception
 
 annotate :: [String] -> [String]
-annotate board = board
+annotate board = undefined
 -- TODO: I need to convert the board to a (x, y, char) mapping
 -- Or at the very least, (x, y) coordinates
---
+
 testBoard = ["***", "***", "***"]
--- 02/20: zip3 (concat board) [0..(length $ board !! 0)] [0..(length board)]
+-- 02/20: zip3 (concat testBoard) [0..(length $ testBoard !! 0)] [0..(length testBoard)]
 -- Not building out the coordinates correctly
 
--- The idea is somewhat sound here but needs more work.
--- Take a board and a (x, y) coordinate and then i can access any element.
 mineCount :: [String] -> Int -> Int -> Maybe Int
 mineCount board x y
   | x < 0 || x >= (length $ board !! 1) = Nothing
@@ -26,12 +24,19 @@ mineCount board x y
         t = valueAt board x (y + 1) -- board !? (y + 1) !? x
         b = valueAt board x (y - 1) -- board !? (y - 1) !? x
 
--- This will be a simple cell lookup
--- TODO: seems to be returning values for what should be out or bounds
---        mineCount testBoard 0 3, should be 0. Im thinking its technically correct
---        But is starting from a off board position so i need to look at the gaurds
 valueAt :: [String] -> Int -> Int -> Maybe Char
 valueAt board x y
   | x < 0 || x >= (length $ board !! 1) = Nothing
   | y < 0 || y >= (length $ board) = Nothing
-  | otherwise = Just $ board !! y !! x -- == ('*')
+  | otherwise = Just $ board !! y !! x
+
+
+-- TODO: Map a board over buildRow
+--       buildRow take the y position you are building out
+--       and the row of xs
+makeCoordinates :: [[x]] -> Int -> Int -> [(x, Int, Int)]
+makeCoordinates xs x y = undefined
+
+
+buildRow :: [x] -> Int -> [(Int, Int, x)]
+buildRow xs y = zip3 [0..(length xs)] (take (length xs) $ repeat y) (xs !! y)
